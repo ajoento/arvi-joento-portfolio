@@ -4,3 +4,72 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{header,.actions,.next,.instruction,.comparison-input,.socials{display:none}.section{padding:35px 0}.hero{min-height:0;padding:30px 6%;break-inside:avoid}.futsal{background:#fff;color:#17181a}.futsal p{color:#555!important}.project,.school-content,.futsal-layout{break-inside:avoid}}
 
 .player-link{display:block;width:fit-content;margin-top:22px;font-size:12px;line-height:1.6;color:#e2e3e4;text-decoration:underline;text-underline-offset:5px}.player-link:hover{color:#fff}
+
+
+/* Added project showcase styles */
+.project-spacing {
+  margin-top: 120px;
+}
+.project-feature-box {
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-feature-box h4 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 14px 0 12px;
+  color: #17181a;
+}
+.project-feature-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #62656a;
+  margin-bottom: 24px;
+}
+.feature-badge {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #202124;
+  text-transform: uppercase;
+  background: #eef0f2;
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.green-accent .feature-badge {
+  background: #e6f4ea;
+  color: #137333;
+}
+.feature-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.feature-tags li {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4b4f54;
+  background: #ffffff;
+  border: 1px solid #d9dce1;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+@media(max-width: 600px) {
+  .project-spacing {
+    margin-top: 70px;
+  }
+  .project-feature-box {
+    padding: 28px 20px;
+  }
+}
