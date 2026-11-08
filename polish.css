@@ -1,0 +1,67 @@
+/* Portfolio visual refresh. Keeps the existing content and interactions intact. */
+:root { --ink:#111827; --muted:#667085; --accent:#4f74ff; --line:#e6eaf0; }
+body { background:#fff; color:var(--ink); }
+header { box-shadow:0 5px 24px rgba(17,24,39,.035); }
+.wordmark { letter-spacing:.24em; }
+.navlinks a { border-radius:999px; font-weight:550; }
+.navlinks a:hover,.navlinks a[aria-current] { background:#eaf0ff; color:#1e3fa7; }
+.contact-link { color:#1e3fa7; }
+.hero { max-width:none; padding-left:max(6vw,calc((100vw - 1280px)/2)); padding-right:max(6vw,calc((100vw - 1280px)/2)); background:linear-gradient(120deg,#0d1524 0%,#17263d 58%,#1c2d45 100%); color:#fff; overflow:hidden; }
+.hero::before { content:""; position:absolute; width:48vw; aspect-ratio:1; right:-18vw; top:-25vw; border:1px solid rgba(255,255,255,.08); border-radius:50%; pointer-events:none; }
+.hero::after { content:""; position:absolute; width:25vw; aspect-ratio:1; right:-8vw; top:-12vw; border:1px solid rgba(255,255,255,.08); border-radius:50%; pointer-events:none; }
+.hero-copy,.portrait-wrap { position:relative; z-index:1; }
+.hero .eyebrow { color:#a9bbd5; }
+.hero h1 { font-size:clamp(55px,6vw,90px); letter-spacing:-.065em; line-height:.98; font-weight:560; }
+.hero .subtitle { color:#f1f4fa; font-weight:500; }
+.hero .intro { color:#c5d0df; max-width:520px; font-size:16px; }
+.hero .status-pill { background:rgba(255,255,255,.09); border-color:rgba(255,255,255,.14); color:#e9f2ee; }
+.hero .quick-highlights { border-color:rgba(255,255,255,.17); gap:42px; }
+.hero .hl-num { color:#fff; font-size:17px; }
+.hero .hl-label { color:#aebdd0; }
+.hero .button { border-color:#fff; background:#fff; color:#14213a; }
+.hero .button:hover { background:#e8eeff; }
+.hero .button.secondary { border-color:rgba(255,255,255,.45); background:transparent; color:#fff; }
+.hero .button.secondary:hover { background:rgba(255,255,255,.1); }
+.hero .portrait-wrap { max-width:500px; border-radius:2px; box-shadow:0 30px 75px rgba(0,0,0,.27); }
+.hero .next { color:#c7d3e4; }
+.heading h2 { font-weight:570; letter-spacing:-.055em; }
+.heading .eyebrow { color:#5573b5; }
+.school { background:#f4f7fb; }
+.study-list article { border-color:#dce4ee; }
+.project { padding-block:28px; }
+.project-copy h3 { font-weight:570; letter-spacing:-.055em; }
+.project-copy dl>div { border-color:#e4e9ef; }
+.project figure img { border-radius:3px; }
+.futsal { background:linear-gradient(130deg,#101c25,#1d303a); }
+.futsal-figure { width:100%; }
+.futsal-instagram { display:block; width:100%; height:680px; border:0; border-radius:6px; background:#fff; }
+.futsal-caption a { color:#dce8ff; text-decoration:underline; text-underline-offset:3px; }
+.futsal-caption a:hover,.futsal-caption a:focus-visible { color:#fff; }
+.contact { background:#f5f7fa; }
+.email { border-color:#4f74ff; }
+.button:focus-visible,.navlinks a:focus-visible { outline:3px solid #7291ff; outline-offset:3px; }
+@media(max-width:960px) { .hero { padding-inline:6%; } }
+@media(max-width:600px) {
+  html { scroll-padding-top:103px; }
+  nav { padding:12px 0 0; gap:8px; }
+  .wordmark { margin-top:2px; }
+  .navlinks { width:100%; display:flex; flex-wrap:nowrap; justify-content:flex-start; overflow-x:auto; gap:2px; margin:0; padding:2px 12px 10px; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
+  .navlinks::-webkit-scrollbar { display:none; }
+  .navlinks a { flex:0 0 auto; white-space:nowrap; padding:8px 12px; font-size:11px; }
+  .hero { padding:56px 6% 64px; text-align:left; gap:32px; }
+  .hero h1 { font-size:clamp(49px,12.5vw,70px); }
+  .hero .intro { font-size:14px; }
+  .hero .status-pill { font-size:10px; }
+  .hero .quick-highlights { gap:15px; justify-content:space-between; }
+  .hero .hl-num { font-size:14px; }
+  .hero .hl-label { font-size:9px; }
+  .hero .actions { flex-direction:row; max-width:none; gap:8px; }
+  .hero .actions .button { min-width:0; flex:1; padding:13px 10px; }
+  .hero .portrait-wrap { max-width:100%; }
+  .section { padding:78px 0; }
+  .heading { padding-inline:6%; }
+  .heading h2 { font-size:clamp(37px,10vw,50px); }
+  .project { padding-block:0; }
+}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{display:none}}
+@media print{.hero{background:#fff!important;color:#111827!important}.hero .subtitle,.hero .intro,.hero .eyebrow,.hero .hl-num,.hero .hl-label{color:#111827!important}}
