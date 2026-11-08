@@ -23,7 +23,6 @@ header { box-shadow:0 5px 24px rgba(17,24,39,.035); }
 .hero .button.secondary { border-color:rgba(255,255,255,.45); background:transparent; color:#fff; }
 .hero .button.secondary:hover { background:rgba(255,255,255,.1); }
 .hero .portrait-wrap { max-width:500px; border-radius:2px; box-shadow:0 30px 75px rgba(0,0,0,.27); }
-.hero .portrait-wrap img { aspect-ratio:4/5; object-fit:cover; object-position:center; }
 .hero .next { color:#c7d3e4; }
 .heading h2 { font-weight:570; letter-spacing:-.055em; }
 .heading .eyebrow { color:#5573b5; }
@@ -35,13 +34,25 @@ header { box-shadow:0 5px 24px rgba(17,24,39,.035); }
 .project figure img { border-radius:3px; }
 .futsal { background:linear-gradient(130deg,#101c25,#1d303a); }
 .futsal-figure { width:100%; }
+.futsal-post-preview { overflow:hidden; border-radius:6px; background:#fff; color:#161b22; }
+.futsal-post-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; }
+.futsal-post-header div { display:flex; flex-direction:column; gap:2px; }
+.futsal-post-header strong { font-size:14px; }
+.futsal-post-header span { color:#667085; font-size:11px; }
+.futsal-post-header a { color:#3558d4; font-size:12px; font-weight:700; white-space:nowrap; }
+.futsal-post-image { display:block; line-height:0; }
+.futsal-post-image img { display:block; width:100%; height:auto; border-radius:0; }
+.futsal-embed-details { margin-top:12px; }
+.futsal-embed-details summary { cursor:pointer; width:100%; padding:12px 16px; border:1px solid #74838c; border-radius:5px; color:#f7f9fa; font-size:13px; text-align:center; }
+.futsal-embed-details[open] summary { margin-bottom:12px; }
+.futsal-embed-details summary:focus-visible { outline:3px solid #7291ff; outline-offset:3px; }
 .futsal-instagram { display:block; width:100%; height:680px; border:0; border-radius:6px; background:#fff; }
 .futsal-caption a { color:#dce8ff; text-decoration:underline; text-underline-offset:3px; }
 .futsal-caption a:hover,.futsal-caption a:focus-visible { color:#fff; }
 .contact { background:#f5f7fa; }
 .email { border-color:#4f74ff; }
 .button:focus-visible,.navlinks a:focus-visible { outline:3px solid #7291ff; outline-offset:3px; }
-@media(max-width:960px) { .hero { padding-inline:6%; } .hero .portrait-wrap { grid-row:1; } .hero .hero-copy { grid-row:2; } }
+@media(max-width:960px) { .hero { padding-inline:6%; } }
 @media(max-width:600px) {
   html { scroll-padding-top:103px; }
   nav { padding:12px 0 0; gap:8px; }
