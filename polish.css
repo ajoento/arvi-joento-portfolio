@@ -23,6 +23,7 @@ header { box-shadow:0 5px 24px rgba(17,24,39,.035); }
 .hero .button.secondary { border-color:rgba(255,255,255,.45); background:transparent; color:#fff; }
 .hero .button.secondary:hover { background:rgba(255,255,255,.1); }
 .hero .portrait-wrap { max-width:500px; border-radius:2px; box-shadow:0 30px 75px rgba(0,0,0,.27); }
+.hero .portrait-wrap img { aspect-ratio:4/5; object-fit:cover; object-position:center; }
 .hero .next { color:#c7d3e4; }
 .heading h2 { font-weight:570; letter-spacing:-.055em; }
 .heading .eyebrow { color:#5573b5; }
@@ -40,7 +41,7 @@ header { box-shadow:0 5px 24px rgba(17,24,39,.035); }
 .contact { background:#f5f7fa; }
 .email { border-color:#4f74ff; }
 .button:focus-visible,.navlinks a:focus-visible { outline:3px solid #7291ff; outline-offset:3px; }
-@media(max-width:960px) { .hero { padding-inline:6%; } }
+@media(max-width:960px) { .hero { padding-inline:6%; } .hero .portrait-wrap { grid-row:1; } .hero .hero-copy { grid-row:2; } }
 @media(max-width:600px) {
   html { scroll-padding-top:103px; }
   nav { padding:12px 0 0; gap:8px; }
