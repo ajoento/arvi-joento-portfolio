@@ -37,7 +37,9 @@ nav { max-width: 1320px; justify-content: center; }
 .section { padding-block: clamp(82px, 8vw, 126px); }
 .eyebrow { color: var(--green); }
 .heading { margin-bottom: 70px; }
-.section-logo { display: block; height: auto; object-fit: contain; margin: 0 auto 24px; }
+.heading-title-row { display: inline-flex; align-items: center; justify-content: center; gap: clamp(14px, 2.5vw, 28px); max-width: 100%; }
+.heading-title-row h2 { margin: 0; }
+.section-logo { display: block; flex: 0 0 auto; height: auto; object-fit: contain; }
 .school-logo { width: 170px; }
 .military-logo { width: 100px; }
 .heading h2 { color: var(--ink); font-size: clamp(2.8rem, 5.5vw, 5rem); line-height: 1.03; letter-spacing: -.06em; font-weight: 630; text-wrap: balance; }
@@ -147,6 +149,10 @@ footer { border-color: var(--line); color: #67796d; }
   .section { padding-block: 72px; }
   .heading { margin-bottom: 44px; }
   .heading h2 { font-size: clamp(2.5rem, 11vw, 3.7rem); }
+  .heading-title-row { gap: 10px; }
+  .heading-title-row h2 { font-size: clamp(1.5rem, 7vw, 2.7rem); }
+  .school-logo { width: clamp(62px, 15vw, 90px); }
+  .military-logo { width: clamp(56px, 12vw, 74px); }
   .project { gap: 34px; }
   .project-copy h3 { font-size: clamp(2.15rem, 10vw, 3rem); }
   .project-spacing { margin-top: 74px; }
