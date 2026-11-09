@@ -91,6 +91,14 @@ nav { max-width: 1320px; }
 .military-content p { max-width: 65ch; line-height: 1.7; }
 .military-content > div > p { margin-top: 22px; }
 .military-note { padding: 18px 0 18px 26px; border-left: 2px solid var(--green); color: var(--green-deep); }
+.study-portrait { margin-top: 32px; max-width: 420px; }
+.study-portrait img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 70%; border-radius: 18px; }
+.military-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 48px; }
+.military-gallery img { width: 100%; height: auto; border-radius: 18px; }
+.military-gallery figcaption { margin-top: 12px; color: var(--muted); line-height: 1.6; }
+@media (max-width: 600px) {
+  .military-gallery { grid-template-columns: 1fr; gap: 32px; }
+}
 
 .futsal { background: #122923; color: #fff; }
 .futsal-layout { gap: clamp(42px, 8vw, 110px); }
