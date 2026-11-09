@@ -47,6 +47,9 @@ nav { max-width: 1320px; justify-content: center; }
 .text-link { color: var(--green); }
 .school-actions { flex-wrap: wrap; }
 .hackathon-feature { margin-top: clamp(56px, 7vw, 96px); padding: clamp(28px, 4vw, 50px); background: #f0f6ee; border: 1px solid #dce8da; border-radius: 18px; }
+.hackathon-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.hackathon-heading .eyebrow { margin: 0; }
+.hackathon-logo { display: block; width: 120px; max-width: 32%; height: auto; object-fit: contain; }
 .hackathon-feature h3 { color: var(--ink); font-size: clamp(2rem, 3.5vw, 3.4rem); letter-spacing: -.055em; }
 .hackathon-feature > p:not(.eyebrow) { max-width: 74ch; margin: 18px 0 20px; line-height: 1.65; }
 
@@ -81,9 +84,7 @@ nav { max-width: 1320px; justify-content: center; }
 .military-content p { max-width: 65ch; line-height: 1.7; }
 .military-content > div > p { margin-top: 22px; }
 .military-note { padding: 18px 0 18px 26px; border-left: 2px solid var(--green); color: var(--green-deep); }
-.study-portrait { margin-top: 32px; max-width: 420px; }
-.study-portrait img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 70%; border-radius: 18px; }
-.military-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 48px; }
+.military-gallery { display: grid; grid-template-columns: minmax(0, 620px); justify-content: center; margin-top: 48px; }
 .military-gallery img { width: 100%; height: auto; border-radius: 18px; }
 .military-gallery figcaption { margin-top: 12px; color: var(--muted); line-height: 1.6; }
 @media (max-width: 600px) {
@@ -95,7 +96,7 @@ nav { max-width: 1320px; justify-content: center; }
 .futsal h2 { font-size: clamp(2.5rem, 4.5vw, 4.7rem); line-height: 1.08; letter-spacing: -.055em; text-wrap: balance; }
 .futsal .eyebrow { color: #9dc7ad; }
 .futsal .bodycopy { color: #c5d6c9; font-size: .98rem; max-width: 58ch; }
-.season { color: #9dbbaa; }
+
 .button.light { border-radius: 999px; background: #fff; color: var(--green-deep); }
 .player-link { color: #d4e9db; }
 .futsal-figure { width: 100%; }
@@ -115,6 +116,8 @@ nav { max-width: 1320px; justify-content: center; }
 .contact { background: #eff5ee; }
 .contact h2 { color: var(--ink); letter-spacing: -.06em; }
 .contact > p:not(.eyebrow) { color: var(--muted); }
+.contact .phone { display: block; width: max-content; margin: 14px auto 0; font-size: clamp(1.15rem, 2vw, 1.55rem); font-weight: 600; color: var(--green-deep); }
+.contact .phone:hover { text-decoration: underline; }
 .email { color: var(--green-deep); border-color: var(--green); }
 .socials { color: var(--green-deep); }
 footer { border-color: var(--line); color: #67796d; }
