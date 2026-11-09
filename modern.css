@@ -40,7 +40,8 @@ nav { max-width: 1320px; justify-content: center; }
 .heading-title-row { display: inline-flex; align-items: center; justify-content: center; gap: clamp(14px, 2.5vw, 28px); max-width: 100%; }
 .heading-title-row h2 { margin: 0; }
 .section-logo { display: block; flex: 0 0 auto; height: auto; object-fit: contain; }
-.school-logo { width: 170px; }
+.school-logo { width: 82px; }
+.yard-title-logo { width: 110px; }
 .military-logo { width: 100px; }
 .heading h2 { color: var(--ink); font-size: clamp(2.8rem, 5.5vw, 5rem); line-height: 1.03; letter-spacing: -.06em; font-weight: 630; text-wrap: balance; }
 .heading > p:last-child { color: var(--muted); font-size: 1rem; }
@@ -52,8 +53,7 @@ nav { max-width: 1320px; justify-content: center; }
 .text-link { color: var(--green); }
 .school-actions { flex-wrap: wrap; }
 .hackathon-feature { margin-top: clamp(56px, 7vw, 96px); padding: clamp(28px, 4vw, 50px); background: #f0f6ee; border: 1px solid #dce8da; border-radius: 18px; }
-.hackathon-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.hackathon-heading .eyebrow { margin: 0; }
+.hackathon-heading { display: flex; justify-content: flex-end; }
 .hackathon-logo { display: block; width: 120px; max-width: 32%; height: auto; object-fit: contain; }
 .hackathon-feature h3 { color: var(--ink); font-size: clamp(2rem, 3.5vw, 3.4rem); letter-spacing: -.055em; }
 .hackathon-feature > p:not(.eyebrow) { max-width: 74ch; margin: 18px 0 20px; line-height: 1.65; }
@@ -80,7 +80,6 @@ nav { max-width: 1320px; justify-content: center; }
 .project-copy p.instruction { color: var(--green); }
 
 .yard-section { background: #fff; }
-.yard-logo { width: 180px; height: 180px; object-fit: contain; margin-bottom: 24px; }
 .yard-photo { aspect-ratio: 4 / 4.7; border-radius: 18px; box-shadow: 0 20px 50px rgba(23,41,35,.09); }
 
 .military-section { background: var(--cream); }
@@ -151,7 +150,9 @@ footer { border-color: var(--line); color: #67796d; }
   .heading h2 { font-size: clamp(2.5rem, 11vw, 3.7rem); }
   .heading-title-row { gap: 10px; }
   .heading-title-row h2 { font-size: clamp(1.5rem, 7vw, 2.7rem); }
-  .school-logo { width: clamp(62px, 15vw, 90px); }
+  .school-logo { width: clamp(44px, 11vw, 60px); }
+  .yard-title-logo { width: clamp(48px, 13vw, 70px); }
+  .yard-section .heading-title-row h2 { font-size: clamp(1.4rem, 6.5vw, 2.5rem); }
   .military-logo { width: clamp(56px, 12vw, 74px); }
   .project { gap: 34px; }
   .project-copy h3 { font-size: clamp(2.15rem, 10vw, 3rem); }
@@ -160,7 +161,6 @@ footer { border-color: var(--line); color: #67796d; }
   .guuni-screenshot img { height: 330px; }
   .guuni-max img { height: 120px; }
   .guuni-screenshot figcaption, .guuni-max figcaption { font-size: .62rem; padding: 8px; }
-  .yard-logo { width: 150px; height: 150px; }
   .futsal h2 { font-size: clamp(2.25rem, 10vw, 3.3rem); }
 }
 @media print { .hero, .futsal { background: #fff !important; color: #172923 !important; } .hero .subtitle, .futsal .bodycopy { color: #172923 !important; } }
