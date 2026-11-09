@@ -79,7 +79,7 @@ nav { max-width: 1320px; justify-content: center; }
 .yard-photo { aspect-ratio: 4 / 4.7; border-radius: 18px; box-shadow: 0 20px 50px rgba(23,41,35,.09); }
 
 .military-section { background: var(--cream); }
-.military-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(32px, 7vw, 96px); align-items: center; }
+.military-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(32px, 7vw, 96px); align-items: start; }
 .military-content h3 { color: var(--ink); font-size: clamp(2.1rem, 4vw, 3.8rem); letter-spacing: -.055em; max-width: 14ch; }
 .military-content p { max-width: 65ch; line-height: 1.7; }
 .military-content > div > p { margin-top: 22px; }
