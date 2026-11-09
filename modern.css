@@ -37,6 +37,9 @@ nav { max-width: 1320px; justify-content: center; }
 .section { padding-block: clamp(82px, 8vw, 126px); }
 .eyebrow { color: var(--green); }
 .heading { margin-bottom: 70px; }
+.section-logo { display: block; height: auto; object-fit: contain; margin: 0 auto 24px; }
+.school-logo { width: 170px; }
+.military-logo { width: 100px; }
 .heading h2 { color: var(--ink); font-size: clamp(2.8rem, 5.5vw, 5rem); line-height: 1.03; letter-spacing: -.06em; font-weight: 630; text-wrap: balance; }
 .heading > p:last-child { color: var(--muted); font-size: 1rem; }
 .school { background: #fff; }
