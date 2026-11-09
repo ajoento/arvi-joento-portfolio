@@ -79,17 +79,14 @@ nav { max-width: 1320px; justify-content: center; }
 .yard-photo { aspect-ratio: 4 / 4.7; border-radius: 18px; box-shadow: 0 20px 50px rgba(23,41,35,.09); }
 
 .military-section { background: var(--cream); }
-.military-content { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(32px, 8vw, 110px); align-items: end; }
+.military-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(32px, 7vw, 96px); align-items: center; }
 .military-content h3 { color: var(--ink); font-size: clamp(2.1rem, 4vw, 3.8rem); letter-spacing: -.055em; max-width: 14ch; }
 .military-content p { max-width: 65ch; line-height: 1.7; }
 .military-content > div > p { margin-top: 22px; }
 .military-note { padding: 18px 0 18px 26px; border-left: 2px solid var(--green); color: var(--green-deep); }
-.military-gallery { display: grid; grid-template-columns: minmax(0, 620px); justify-content: center; margin-top: 48px; }
-.military-gallery img { width: 100%; height: auto; border-radius: 18px; }
-.military-gallery figcaption { margin-top: 12px; color: var(--muted); line-height: 1.6; }
-@media (max-width: 600px) {
-  .military-gallery { grid-template-columns: 1fr; gap: 32px; }
-}
+.military-content figure { width: min(100%, 520px); justify-self: end; }
+.military-content img { width: 100%; height: auto; border-radius: 18px; }
+.military-content figcaption { margin-top: 12px; color: var(--muted); line-height: 1.6; }
 
 .futsal { background: #122923; color: #fff; }
 .futsal-layout { gap: clamp(42px, 8vw, 110px); }
@@ -130,7 +127,8 @@ footer { border-color: var(--line); color: #67796d; }
   .hero .portrait-wrap { justify-self: start; max-width: 560px; }
   .guuni-media { max-width: 650px; }
   .yard .project-copy { grid-row: 1; }
-  .military-content { grid-template-columns: 1fr; gap: 22px; }
+  .military-content { grid-template-columns: 1fr; gap: 38px; }
+  .military-content figure { justify-self: start; }
   .military-note { max-width: 55ch; }
   .futsal-figure { justify-self: start; max-width: 440px; }
 }
