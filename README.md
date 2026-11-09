@@ -3,8 +3,9 @@
 Henkilökohtainen portfoliosivusto.
 
 - **Koulu:** Turun ammattikorkeakoulu, Tuotantotalous (Insinööri AMK)
-- **Yrittäminen:** WinFi Oy (Guuni-palvelualusta ja asuntoflippaus) sekä Pihahuolto Joento (toiminimi)
-- **Urheilu:** RaiFu Futsal edustusjoukkue (#11)
+- **Yrittäminen:** WinFi Oy (päättynyt Guuni-palvelualustaprojekti ja asuntoflippaus) sekä Pihahuolto Joento (toiminimi)
+- **Varusmiespalvelus:** Merivoimat, Merisotakoulun reserviupseerikurssi ja merenkulku
+- **Urheilu:** RaiFun futsalin edustusjoukkue
 
 ## Teknologiat
 - HTML5
